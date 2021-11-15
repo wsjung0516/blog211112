@@ -16,10 +16,21 @@
     <hr>
 
     <!-- Post Content Column -->
+      <p class="text-xl mt-6">Angular framework 교육 이력</p>
+      <ol class="list-disc ml-6">
+        <li>
+          <div>교육이력</div>
+          <p> Angular 및 RxJS 의 고급기술 들을 신입사원을 대상으로 12개월간 매일 1시간 정도 교육을 하였음.
+            내용: Angular 및 RxJS의 기본 내용 및 medium daily digest 에서 제공하는 article 중
+            난이도가 있고 실용성이 있는 내용을 중심으로 교육하였음..</p>
+          <p>Angular : <a class="text-blue-700" href="https://wsjung0516.github.io/angular/">Details</a></p>
+          <p>RxJS: <a class="text-blue-700" href="https://wsjung0516.github.io/rxjs/">Details</a></p>
+        </li>
+      </ol>
 
-      <h5>Angular project 설계 고려사항</h5>
-      <br/>
-      <ol>
+
+      <p class="text-xl mt-6">Angular project 설계 고려사항</p>
+      <ol class="list-disc ml-6">
         <li>
           <div>State Management</div>
           <div>프로그램 전체의 각 모듈별로 변경되는 데이터의 상태를 모니터링하거나 업데이트하여 연관된 모듈들이 변경된 데이터를 즉시 수신이 가능하도록 함.</div>
@@ -68,10 +79,22 @@
           <div>Angular Animation</div>
           <div>특정 UI는 에니메이션 기능을 적용하여 사용자의 가독성 증가 및 데이터의 실시간성을 제공함.</div>
         </li>
+        <li class="mt-6">
+          <div>TDD</div>
+          <div>프로그램의 기본 개발은 항상 TDD를 염두에 두고 개발함. 테스트를 적용할 수 없는 함수 개발을 배제함.
+          Angular 기본 test framework 인 jasmine의 기능을 보완하여, boilerplate 를 제거하고
+            test code를 단순하게 할 수 있는 spectator library를 적용하여 개발함.</div>
+        </li>
       </ol>
       <hr>
-      <h5>Programming Language</h5>
-      <ol>
+      <p class="text-xl mt-6">Angular RxJS</p>
+      <ol class="list-disc ml-6">
+        <li>
+          <div>경험기간: 2016 ~ 2021</div>
+        </li>
+      </ol>
+      <p class="text-xl mt-6">Programming Language</p>
+      <ol class="list-disc ml-6 mt-3">
         <li>
           <div>C, C++</div>
           <div>경험기간: 1988 ~ 1997</div>
@@ -88,36 +111,44 @@
         </li>
       </ol>
       <hr>
-      <h5>Database</h5>
-      <ol>
-        <li>
+      <p class="text-xl mt-6">Backend</p>
+      <ol class="list-disc ml-6">
+        <li>nestjs(backend framework), Prisma (ORM library)를 적용하여 프로젝트를 수행한 경험이 있음.</li>
+        <li>GraphQL, Applo를 적용하여 프로젝트를 수행한 경험이 있음.</li>
+      </ol>
+      <ol class="list-disc ml-6">
+        <li class="mt-3">
           <div>RDBMS</div>
           <div>MySQLS</div>
         </li>
-        <li>
+        <li class="mt-3">
           <div>NoSQL</div>
           <div>MongoDB, Firebase</div>
         </li>
       </ol>
       <hr>
-      <h5>기타</h5>
-      <ol>
-        <li>
+      <p class="text-xl mt-6">기타</p>
+      <ol class="list-disc ml-6">
+        <li class="mt-3">
           <div>REST API</div>
           <div>인터페이스 설계 및 적용한 경험이 있음.</div>
         </li>
-        <li>
+        <li class="mt-3">
           <div>Nodejs</div>
           <div>서버설계 및 적용한 경험이 있음.</div>
         </li>
-        <li>
+        <li class="mt-3">
           <div>AWS</div>
           <div>데모프로젝트 수행시 EC2서버를 사용하여 적용한 경험이 있음.</div>
         </li>
+        <li class="mt-3">
+          <div>의료영상 전용 library</div>
+          <div>cornerstone cornerstone-tools 적용한 경험이 있음.</div>
+        </li>
       </ol>
       <hr>
-      <h5>관심분야</h5>
-      <ol>
+      <p class="text-xl mt-6">관심분야</p>
+      <ol class="list-disc ml-6">
         <li>
           <div>Angular, RxJS</div>
           <div>고급 응용 기술 습득.</div>
@@ -126,83 +157,10 @@
           <div>TDD</div>
           <div>Spectator: Angular 전용 Test Framework</div>
           <div>Karma 대용으로 속도가 빠르고, boilerplate 가 적고 간결함</div>
-          <div>Jest : Jasmine의 대용으로 사용. Test Framework</div>
-          <div>Browser를 disply하지 않고 가상의 DOM을 사용, 실행 속도가 빠름. 향상된 테스트 레포트를 제공함. 다양한 테스팅 모듈 제공.</div>
+          <div>Jasmine 은 필요시 적용함</div>
         </li>
       </ol>
       <br/>
-
-
-    </div>
-
-    <!-- Sidebar Widgets Column -->
-    <div class="col-md-4 ">
-      <div class="sub-header">
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button"  (click)="onGo()">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Angular</a>
-                  </li>
-                  <li>
-                    <a href="#">RxJS</a>
-                  </li>
-                  <li>
-                    <a href="#">Reactive X</a>
-                  </li>
-                  <li>
-                    <a href="#">Ionic</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Nodejs</a>
-                  </li>
-                  <li>
-                    <a href="#">Flutter</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <!--
-                <div class="card my-4">
-                  <h5 class="card-header">Side Widget</h5>
-                  <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-                  </div>
-                </div>
-        -->
-
-      </div>
 
 
     </div>
