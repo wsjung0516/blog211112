@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href https://wsjung0516.github.io/blog211112/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "build:prod": "cross-env NODE_ENV=production ng build --configuration production"
@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zero-md": "^2.3.1",

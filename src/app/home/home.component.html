@@ -3,16 +3,16 @@
 
   <!-- Post Content Column -->
 
-  <div class="">
-    <p class="mb-5 text-3xl">Example program</p>
+  <div class="mt-20">
+    <p class="mb-5 text-3xl">Example programs for demo.</p>
   </div>
 
   <hr class="border-b-2 border-gray-400 mt-8 mb-4">
 
   <!-- Preview Image -->
-  <p class="text-2xl mb-1.5"> Split window </p>
+  <p class="text-2xl mb-1.5">1. Split window </p>
   <div>
-    <img src="../../assets/images/splitwindow.PNG" height="922" width="1549"/>
+    <img src="assets/images/splitwindow.PNG" height="922" width="1549"/>
   </div>
 
   <p>demo program : <a class="text-blue-700" href="https://wsjung0516.github.io/split-window-spectator211009/">Demo</a>
@@ -34,7 +34,7 @@
     <li>이미지를 여러 구룹(category)으로 구분하여 구룹별로 읽어오는데, 이미지를 로딩하는 시간이
       많이 걸리므로, 이것을 보완하기 위하여 webworker 기술을 적용하였다.
     </li>
-    <li> 그리고, 한번 읽어들이 이미지는 나중에 빠르게 전시하기 위해서 cache를 적용하여 저장한다.</li>
+    <li> 그리고, 한번 읽어들인 이미지는 나중에 빠르게 전시하기 위해서 cache를 적용하여 저장한다.</li>
     <li> 사용자가 하나의 그룹(category)을 선택했다가, 이미지가 caching 되는 중에도, 다른 그룹을
       선택하는 경우를 고려하여 webworker가 이미지 로딩중에 다른 구룹 선택이 되면,
       바로 다른 그룹으로 바꾸어서 image loading이 가능하게 구현했다.
@@ -66,6 +66,8 @@
     <li> 각각의 split window 는 별도의 component 구성하고 있으므로 각 split window
       마다의 고유의 변수를 가지고 있어야 한다. 이 부분은 서비스 프로그램에서 각 split window 마다의
       값을 유지한다. 프로그램에서 이 부분이 난이도가 있는 부분이다.
+      <span><a class="text-blue-700"
+            href="https://wsjung0516.github.io/grid">상세설명</a></span>
     </li>
     <li> 각 split window는 category별로 할당되며, 하나의 split window에서는 첫번째 이미지를
       그리는 시작시점과 종료시점을 전역 변수에 저장하고 있어야 한다. 그러므로 각 split window는
@@ -77,14 +79,12 @@
     </li>
     <li> 이런 과정을 거쳐야만 각각의 window가 각각 고유의 id를 유지할 수 있으므로
       window별로 통제가 가능하다.
-      <p><a class="text-blue-700"
-            href="https://wsjung0516.github.io/grid">상세 설명</a></p>
 
     </li>
   </ol>
   <p class="text-xl mt-8">Overall diagram</p>
   <div class="">
-    <img src="../../assets/images/split-structure.png" width="600"/>
+    <img src="assets/images/split-structure.png" width="600"/>
   </div>
   <ol class="list-disc ml-6 mt-2">
     <li>Series list: 화면 좌측의 category 별로 표시되는 image list</li>
@@ -119,11 +119,11 @@
     <li> RxJS: ver 6.5 (Reactive programming library)</li>
     <li> NgXS: (Redux: State Management Library)</li>
     <li> Webworker: Observable-webworker (RxJS oriented webworker)</li>
-    <li> TDD: spectator ( Angular oriented TDD development tool)</li>
+    <li> TDD: Spectator ( Angular oriented TDD development tool)</li>
   </ol>
-  <hr class="border-b-2 border-gray-400 mt-8 mb-4">
+  <hr class="border-b-2 border-gray-900 mt-12 mb-4">
   <!-- Preview Image -->
-  <p class="text-2xl mb-1.5"> Ordering Pizza </p>
+  <p class="text-2xl mb-1.5">2. Ordering Pizza </p>
 
   <div>
     <img class="img-fluid rounded" src="assets/images/pizza.png" alt="">
@@ -137,7 +137,7 @@
   <p>
   <ol class="list-disc ml-6">
     <li>이 프로그램은 이미지 원본의 일부는 다른 Article에서 참조하고 ,
-      원래의 Angular로 개발된 샘플프로그램: (Angular source: https://github.com/cypress-io/angular-pizza-creator)</li>
+      원래의 Angular로 개발된 샘플프로그램: (Angular source: https://github.com/cypress-io/angular-pizza-creator).</li>
     <li>Redux(NgXS), RxJS를 조합하여 개발을 시도하다 중단된 프로그램:
       (<a href="https://github.com/tommythongnguyen/Ngxs-Pizza-Order">https://github.com/tommythongnguyen/Ngxs-Pizza-Order</a>)
     </li>
@@ -153,7 +153,7 @@
   <p class="text-xl mt-8">적용기술</p>
   <ol class="list-disc ml-6">
     <li>NgXS: (Angular전용 Redux) : Redux를 적용하여 프로그램의 각 모듈의 상태 변화를 한 곳에서
-      nbsp;관리하므로 상태관리를 쉽게 할 수 있고 기능 확장 및 유비보수가 용이함.
+      관리하므로 상태관리를 쉽게 할 수 있고 기능 확장 및 유비보수가 용이함.
     </li>
     <li> Angular Material : 기본적인 Component (button, input, card 등)와 Table을 적용하였음</li>
     <li> Angular Cdk : Angular Cdk Overlay 기술로 선택된 토핑을 표현하는 구현함.
@@ -168,7 +168,7 @@
   <br/>
   <p class="text-xl mt-8">기본구조</p>
   <div class="mt-4">
-    <img src="../../assets/images/pizza-structure.png" width="500"/>
+    <img src="assets/images/pizza-structure.png" width="500"/>
   </div>
   <ol class="list-decimal ml-6 mt-3">
     <li>메인화면으로 만들어진 pizza 들을 전시하는 프로그램</li>
@@ -187,8 +187,8 @@
     <li>product-item.componet: 데시보드에 나열된 피자를 선택하는 경우 별개로 표시 하는 컴퍼넌트.</li>
     <li>product.component: 생성된 피자를, 데시보드(홈 메뉴)에 나열하는 부분</li>
   </ol>
-  <hr class="border-b-2 border-gray-400 mt-8 mb-4">
-  <p class="text-2xl mb-1.5">XXX 프로젝트 (심사상세 모듈) 프로그램</p>
+  <hr class="border-b-2 border-gray-900 mt-12 mb-4">
+  <p class="text-2xl mb-1.5">3. X 프로젝트 (심사상세 모듈) 프로그램</p>
 
   <div>
     <img class="img-fluid rounded" src="assets/images/element.png" alt="">
@@ -199,43 +199,57 @@
   <p>소스프로그램 : <a class="text-blue-700" href="https://github.com/wsjung0516/ocr-elements">Source</a></p>
   <p>&nbsp;</p>
   <p class="text-xl">개요.</p>
-  <ol>
+  <ol class="list-disc ml-6 mt-4">
     <li>이 프로그램은 모 은행에서 프로젝트 시행중인 수출입물품제재(미국의 적대국가에
-      수출입을 못하도록 제한을 목적으로 함)기능으로, 수출입 문서가 OCR(Optical Character Recognition)
+      수출입을 못하도록 제한을 목적으로 함)기능으로,</li>
+    <li>수출입 문서가 OCR(Optical Character Recognition)
       문서의 이미지 형태의 데이터에서 AI 기술 적용으로 이미지에 포함된 글자를 판독한 결과를 조회, 수정,
-      수/출입 제재항목 심사, 심사내용 결재 등의 핵심기능 수행하는 프로그램.
-      실제 데이터가 없으므로 가상의 데이터로 원래의 테이블을 기능을 구현하고 테이블에서 분석하는 프로그램을 호출하도록 구현하였습니다.
+      수/출입 제재항목 심사, 심사내용 결재 등의 핵심기능 수행하는 프로그램.</li>
+    <li>  실제 데이터가 없으므로 가상의 데이터로 원래의 테이블을 기능을 구현하고 테이블에서 분석하는 프로그램을 호출하도록 구현하였음.
     </li>
   </ol>
   <br/>
-  <p>메뉴 설명</p>
-  <ol>
-    <li>a. 에니메이션</li>
-    <li>- 프로그램에서 Help 버튼으로 설명을 확인함.</li>
-    <li>b. OCR 분석 프로그램</li>
-    <li>- 프로그램에서 Help 버튼으로 설명을 확인함</li>
+  <p class="text-xl mt-8">메뉴 설명</p>
+  <ol class="list-disc ml-6 mt-4">
+    <li>에니메이션</li>
+    <p>- 프로그램에서 Help 버튼으로 설명을 확인함.</p>
+    <li>OCR (Optical Character Recognition) 분석 프로그램</li>
+    <p>- 프로그램에서 Help 버튼으로 설명을 확인함</p>
   </ol>
-  <p class="text-xl">적용기술</p>
-  <ol>
+  <p class="text-xl mt-8">적용기술</p>
+  <ol class="list-disc ml-6">
 
     <li> Angular Element : 적용하여 실제 실행되는 프로그램이 한 개의 JavaScript( xxx.js file)
       &nbsp;로 생성되어 필요한 프로젝트에서 바로 JavaScript Component처럼 적용할 수 있도록 개발함.
     </li>
     <li> 이 파일을 적용하는 프로젝트는 이 파일의 input/output, property, event 정보를
-      참조하여 바로 &nbsp;&nbsp;적용(Embed)할 수 있음.
+      참조하여, 마치 Lego block을 조립하는 것처럼 바로 적용(Embed)할 수 있음.
     </li>
     <li> Angular Material : 기본적인 Component (button, input, card 등)와 Table을 적용하였음</li>
     <li> Angular Animation : Angular Animation 기능을 적용하여 Table 데이터를 생동감 있게 표현함.</li>
     <li> RxJS : 프로그램의 주요 함수는 전부 RxJS를 적용하여 생산성 및 유지보수성을 향상하였음.</li>
     <li> Angular Cdk를 적용하여 Help Message를 Overlay 기법으로 표현함. 백그라운드에 있는
-      &nbsp;&nbsp;HTMLElement에는 영향을 주지않고 자연스럽게 데이터를 원하는 위치에 표시함.
+      &nbsp;&nbsp;HTML Element에는 영향을 주지않고 자연스럽게 데이터를 원하는 위치에 표시함.
     </li>
   </ol>
-  <p>프로그램 소스 설명</p>
-  <p>컴포넌트 설계 구조</p>
-  <img class="img-fluid rounded" src="assets/images/ocr-element-structure1.png" alt="">
-  <img class="img-fluid rounded" src="assets/images/ocr-element-structure2.png" alt="">
-  <ol>
+  <p class="text-xl mt-8">컴포넌트 설계 구조</p>
+  <img class="img-fluid rounded" src="assets/images/ocr-dialog.png" alt="">
+  <ol class="list-decimal ml-6 mt-3">
+    <li>ocr-dialog: Elements 로 메인 프로그램에 삽입되는 Dialog </li>
+    <li>htabs: Horizontal Tabs, 프로그램에 dynamically 추가 되거나 삭제됨</li>
+    <li>vtabs: Vertical Tabs 프로그램에서 dynamically 버튼의 label이 수정가능함</li>
+    <li>3.번의 vertical tab에 따라 관련 이미지가 선택되어 표시되는 부분</li>
+    <li>image board: 표시되는 이미지가 zoom으로 표시되는 부분</li>
+    <li>s-rule: 3.번의 Vertical tab에 따라 관련 정보를 표시하는 부분</li>
+    <li>appr-info:3.번의 Vertical tab에 따라 관련 이미지에 적용된 rule을 표시하는 부분</li>
+    <li>관련된 정보에 대한 사용자의 메모나 , 메시지를 전송이 가능하도록 하는 부분</li>
+
+  </ol>
+  <p class="text-xl mt-8">Source 프로그램 구조</p>
+  <div class="mt-4">
+     <img class="img-fluid rounded" src="assets/images/ocr-element-structure2.png" alt="">
+  </div>
+  <ol class="list-disc ml-6 mt-4">
     <li> ocr-dialog 컴포넌트가 메인 보드가 됨.</li>
     <li> htabs가 상위 부분에 배치되고.</li>
     <li> vtabs가 바로 밑에서 vtab, image-board와 양분되어 배치됨.</li>

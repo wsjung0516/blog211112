@@ -4,13 +4,7 @@
   <div class="row">
     <div class="col-lg-8">
       <div class="sub-header">
-        <h2 class="mt-3">경험 기술 (Experienced Skill)</h2>
-
-        <!-- Author -->
-        <p class="lead">
-          by
-          <a href="#">Wonsup Jung</a>
-        </p>
+        <h2 class="text-2xl mt-3">경험 기술 (Experienced Skill)</h2>
 
       </div>
     <hr>
@@ -18,79 +12,75 @@
     <!-- Post Content Column -->
       <p class="text-xl mt-6">Angular framework 교육 이력</p>
       <ol class="list-disc ml-6">
-        <li>
+        <li class="mt-4">
           <div>교육이력</div>
-          <p> Angular 및 RxJS 의 고급기술 들을 신입사원을 대상으로 12개월간 매일 1시간 정도 교육을 하였음.
-            내용: Angular 및 RxJS의 기본 내용 및 medium daily digest 에서 제공하는 article 중
+          <p>-  Angular 및 RxJS 의 고급기술 들을 신입사원을 대상으로 12개월간 주 3회 이상 1시간 정도 교육을 하였음.</p>
+          <p>-  내용: Angular 및 RxJS, Text의 기본 내용 및 Medium daily digest 에서 제공하는 article 중
             난이도가 있고 실용성이 있는 내용을 중심으로 교육하였음..</p>
-          <p>Angular : <a class="text-blue-700" href="https://wsjung0516.github.io/angular/">Details</a></p>
-          <p>RxJS: <a class="text-blue-700" href="https://wsjung0516.github.io/rxjs/">Details</a></p>
+          <p>Angular & RxJS : <a class="text-blue-700" href="https://wsjung0516.github.io/angular/">Details</a></p>
+<!--          <p>RxJS: <a class="text-blue-700" href="https://wsjung0516.github.io/rxjs/">Details</a></p>-->
         </li>
       </ol>
 
 
       <p class="text-xl mt-6">Angular project 설계 고려사항</p>
       <ol class="list-disc ml-6">
-        <li>
-          <div>State Management</div>
-          <div>프로그램 전체의 각 모듈별로 변경되는 데이터의 상태를 모니터링하거나 업데이트하여 연관된 모듈들이 변경된 데이터를 즉시 수신이 가능하도록 함.</div>
-          <div><span style="color: #3366ff;">적용기술: Redux ( ngxs : Angular전용 상태관리 프로그램)&nbsp;</span><br /><br /></div>
-        </li>
-        <li>
-          <div>Reactive Programming</div>
-          <div>함수형 프로그램 방식으로 프로그램밍 하여 프로그램이 간결하고 오류 발생을 최소화할 뿐아니라, 생산성 및 유지보수성을 향상 시킴.</div>
-          <div><span style="color: #3366ff;">적용기술: RxJS</span><br />&nbsp;</div>
-        </li>
-        <li>
-          <div>Error Handling</div>
-          <div>프로그램 전체에서 발생하는 오류에 대해서 한개의 모듈에 처리함. Http오류, Server오류, 내부 프로그램 오류로 분류하여 표시하거나 서버에 저장함. 각 모듈에서는 오류처리를 별도로 하지 않고 단지 오류 발생한 정보를 전달하는 기능만 구현함.&nbsp;</div>
-          <div><span style="color: #3366ff;">적용기술: Angular에서 제공하는 ErrorHandler 모듈을 상속받아 적용함.</span>&nbsp;<br /><br /></div>
-        </li>
-        <li>
-          <div>UI Validation</div>
-          <div>프로그램 전체의 UI에 대해서 입력되는 데이터의 Validation을 담당함. 각 프로그램에서는 Validation에 대한 기능을 별도로 구현하지 않고, 단지 요구되는 Validation을 등록하기만 하고, 모든 처리는 하나의 모듈에서 구현함.&nbsp;</div>
-          <div><span style="color: #3366ff;">적용기술: 별도의 모듈 개발하여 적용하며, 외부 라이브러리는 bulma.js를 적용함.</span>&nbsp;<br /><br /></div>
-        </li>
-        <li>
-          <div>Http Interception</div>
-          <div>서버와의 통신에서 발생하는 부가적인처리를 한 모듈 그룹에서 전담하도록 구현함. Http 통신 데이터의 Caching 기능, Http 통신시 Spinner 처리, 데이터 Converting JSON/JS, XML/JSON, Header정보를 추가함( &nbsp;data type, contexts), Communication Status Message 전시, 물리적인 통신 오류 발생시 재전송 &nbsp;처리, &nbsp;데이터 처리 시간등에 대한 로그처리, 테스트를 위한 Fake Server 기능, Authentication 기능 ( bearer token 추가, refresh token, redirect login page) &nbsp;구현</div>
-          <div><span style="color: #3366ff;">적용기술: Angular에서 제공하는HttpInterceptor 모듈을 상속받아 적용함.</span>&nbsp;<br /><br /></div>
-        </li>
-        <li>
-          <div>Dynamic Directive</div>
-          <div>모든 UI Data Validation을 위해서 Reactive Form을 적용하는데, Angular가 직접 지원하지 않은 &nbsp;Form control Element에 대해서는 별도로 개발하여 구현함.</div>
-          <div><span style="color: #3366ff;">적용기술: ControlValueAccess interface 를 적용하여 구현함. &nbsp;</span><br /><br /></div>
-        </li>
-        <li>
-          <div>Overlay</div>
-          <div>Angular Material, Bootstrap등이 제공하는 UI Component가 적합하지 않거나, 다이나믹하게 데이터를 전시하는 기능등을 위하여 별도 개발하여 구현함.</div>
-          <div><span style="color: #3366ff;">적용기술: Angular Material, Angular CDK</span><br /><br /></div>
-        </li>
-        <li>
-          <div>Data Table</div>
-          <div>사용자의 요구사항에 맞게, 데이터 테이블에 다양한 기능을 포함하여야 하는 경우에 대비하여 필요 시 빠르게 수정 변경이 가능하게 구현함.</div>
-          <div><span style="color: #3366ff;">적용기술: Angular Material, Angular CDK Material&nbsp;</span><br /><br /></div>
-        </li>
-        <li>
-          <div>Reactive Form</div>
-          <div>프로그램의 모든 UI는 Reactive Form을 기본으로 적용하여 데이터처리를 일관성 있고 간결하게 구현함.</div><br/>
-        </li>
-        <li>
-          <div>Angular Animation</div>
-          <div>특정 UI는 에니메이션 기능을 적용하여 사용자의 가독성 증가 및 데이터의 실시간성을 제공함.</div>
-        </li>
         <li class="mt-6">
           <div>TDD</div>
           <div>프로그램의 기본 개발은 항상 TDD를 염두에 두고 개발함. 테스트를 적용할 수 없는 함수 개발을 배제함.
-          Angular 기본 test framework 인 jasmine의 기능을 보완하여, boilerplate 를 제거하고
-            test code를 단순하게 할 수 있는 spectator library를 적용하여 개발함.</div>
+            Angular 기본 test framework 인 jasmine의 기능을 보완하여, boilerplate 를 제거하고
+            test code를 단순하게 할 수 있는 library (spectator)를 적용하여 개발함.</div>
+        </li>
+        <li class="mt-6">
+          <div>State Management</div>
+          <div>프로그램 전체의 각 모듈별로 변경되는 데이터의 상태를 모니터링하거나 업데이트하여 연관된 모듈들이 변경된 데이터를 즉시 수신이 가능하도록 함.</div>
+          <div><span style="color: #3366ff;">적용기술: Redux ( ngxs : Angular전용 상태관리 프로그램)&nbsp;</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Reactive Programming</div>
+          <div>함수형 프로그램 방식으로 프로그램밍 하여 프로그램이 간결하고 오류 발생을 최소화할 뿐아니라, 생산성 및 유지보수성을 향상 시킴.</div>
+          <div><span style="color: #3366ff;">적용기술: RxJS</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Error Handling</div>
+          <div>프로그램 전체에서 발생하는 오류에 대해서 한개의 모듈에 처리함. Http오류, Server오류, 내부 프로그램 오류로 분류하여 표시하거나 서버에 저장함. 각 모듈에서는 오류처리를 별도로 하지 않고 단지 오류 발생한 정보를 전달하는 기능만 구현함.&nbsp;</div>
+          <div><span style="color: #3366ff;">적용기술: Angular에서 제공하는 ErrorHandler 모듈을 상속받아 적용함.</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Reactive Form Validation</div>
+          <div>프로그램 전체의 UI에 대해서 입력되는 데이터의 Validation을 담당함. 각 프로그램에서는 Validation에 대한 기능을 별도로 구현하지 않고, 단지 요구되는 Validation을 등록하기만 하고, 모든 처리는 하나의 모듈에서 구현함.&nbsp;</div>
+          <div><span style="color: #3366ff;">적용기술: 별도의 모듈 개발하여 적용하며, 외부 라이브러리는 bulma.js를 적용함.</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Http Interception</div>
+          <div>서버와의 통신에서 발생하는 부가적인처리를 한 모듈 그룹에서 전담하도록 구현함. Http 통신 데이터의 Caching 기능, Http 통신시 Spinner 처리, 데이터 Converting JSON/JS, XML/JSON, Header정보를 추가함( &nbsp;data type, contexts), Communication Status Message 전시, 물리적인 통신 오류 발생시 재전송 &nbsp;처리, &nbsp;데이터 처리 시간등에 대한 로그처리, 테스트를 위한 Fake Server 기능, Authentication 기능 ( bearer token 추가, refresh token, redirect login page) &nbsp;구현</div>
+          <div><span style="color: #3366ff;">적용기술: Angular에서 제공하는HttpInterceptor 모듈을 상속받아 적용함.</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Dynamic Directive</div>
+          <div>모든 UI Data Validation을 위해서 Reactive Form을 적용하는데, Angular가 직접 지원하지 않은 &nbsp;Form control Element에 대해서는 별도로 개발하여 구현함.</div>
+          <div><span style="color: #3366ff;">적용기술: ControlValueAccess interface 를 적용하여 구현함. &nbsp;</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Overlay</div>
+          <div>Angular Material, Bootstrap등이 제공하는 UI Component가 적합하지 않거나, 다이나믹하게 데이터를 전시하는 기능등을 위하여 별도 개발하여 구현함.</div>
+          <div><span style="color: #3366ff;">적용기술: Angular Material, Angular CDK</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Data Table</div>
+          <div>사용자의 요구사항에 맞게, 데이터 테이블에 다양한 기능을 포함하여야 하는 경우에 대비하여 필요 시 빠르게 수정 변경이 가능하게 구현함.</div>
+          <div><span style="color: #3366ff;">적용기술: Angular Material, Angular CDK Material&nbsp;</span></div>
+        </li>
+        <li class="mt-6">
+          <div>Angular Animation</div>
+          <div>특정 UI는 에니메이션 기능을 적용하여 사용자의 가독성 증가 및 데이터의 실시간성을 제공함.</div>
         </li>
       </ol>
       <hr>
-      <p class="text-xl mt-6">Angular RxJS</p>
+      <p class="text-xl mt-6">Angular, RxJS</p>
       <ol class="list-disc ml-6">
         <li>
-          <div>경험기간: 2016 ~ 2021</div>
+          <div>경험기간: 2016 ~ 2021 (5년)</div>
         </li>
       </ol>
       <p class="text-xl mt-6">Programming Language</p>
