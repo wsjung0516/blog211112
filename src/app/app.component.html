@@ -1,79 +1,50 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<!--
-<nav class="h-44 bg-black">
-  <div class="flex justify-around">
-    <div class="h-28">
-      <img class="mt-4" src="assets/images/태극기.gif">
-    </div>
-    <a class="mt-14" href="#"><h2>
-      <span class="text-yellow-300 text-3xl" >
-        생각하는 대로 살지 않으면, 사는대로 생각하게 된다.
-      </span></h2></a>
-    <div class="mt-6 text-2xl text-white">
-      <ul class="">
-        <li class="mt-1.5" >
-          <a class="" [routerLink]="['/home']" href="#">Home
-          </a>
-        </li>
-        <li class="mt-1.5" >
-          <a class="" [routerLink]="['/skill']" href="#">Skill</a>
-        </li>
-        <li class="mt-1.5" >
-          <a class="" [routerLink]="['/resume']" href="#">Resume</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
--->
 <nav id="header" class="h-48 bg-black fixed w-full z-10 top-0">
 
-  <div id="progress" class="text-white h-1 z-20 top-0" style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
+  <div id="progress" class="text-white h-1 z-20 top-0"
+       style="background:linear-gradient(to right, #4dc0b5 var(--scroll), transparent 0);"></div>
 
   <div class="text-white w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
     <!-- Rounded switch -->
 
     <div class="flex justify-around">
       <div class="h-28">
-        <img class="mt-2" src="assets/images/태극기.gif">
+        <img class="mt-2 w-44 h-36" #img>
       </div>
       <div class="ml-5 mt-10" href="#">
-      <span class="text-yellow-300 text-3xl" >
-        One must live the way one thinks<br/>
-        or end up thinking the way one has lived.
-      </span></div>
+      <span class="text-yellow-300 text-3xl" #wise_saying>
+      </span>
+      </div>
     </div>
-
-    <!--    <div class="pl-4">-->
-<!--      <a class="text-yellow-300 text-base no-underline hover:no-underline font-extrabold text-xl" href="#">-->
-<!--        Minimal Blog-->
-<!--      </a>-->
-<!--    </div>-->
-
     <div class="block lg:hidden pr-4">
-      <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
+      <button id="nav-toggle"
+              class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-green-500 appearance-none focus:outline-none">
         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
-          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
         </svg>
       </button>
     </div>
 
-    <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20" id="nav-content">
+    <div
+      class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-100 md:bg-transparent z-20"
+      id="nav-content">
       <ul class="list-reset lg:flex justify-end flex-1 items-center">
         <li class="mr-3">
-          <a class="inline-block py-2 px-4 text-white-900 font-bold no-underline" [routerLink]="['/home']" href="#" >Home</a>
+          <a class="inline-block py-2 px-4 text-white-900 font-bold no-underline" [routerLink]="['/home']"
+             href="#">Home</a>
         </li>
         <li class="mr-3">
-          <a class="inline-block text-white-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" [routerLink]="['/skill']" href="#">Skill</a>
+          <a class="inline-block text-white-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+             [routerLink]="['/skill']" href="#">Skill</a>
         </li>
         <li class="mr-3">
-          <a class="inline-block text-white-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4" [routerLink]="['/resume']" href="#">Resume</a>
+          <a class="inline-block text-white-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
+             [routerLink]="['/resume']" href="#">Resume</a>
         </li>
       </ul>
       <div class="flex justify-end mb-5 text-gray-400">
         <label class="h-1.5 inline relative">
-          <input type="checkbox" class="bg-green-200">
+          <input type="checkbox" class="bg-green-200" (click)="onSelectLanguage()"  id="checkbox">
           <span class="mx-1 slider round">English</span>
         </label>
       </div>
@@ -81,26 +52,9 @@
   </div>
 </nav>
 <div class="container w-full md:max-w-3xl mx-auto pt-20">
-
-  <div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal" style="font-family:Georgia,serif;">
-    <!--Title-->
-<!--
-    <div class="font-sans mt-20">
-      <p class="text-base md:text-sm text-green-500 font-bold">&lt; <a href="#" class="text-base md:text-sm text-green-500 font-bold no-underline hover:underline">BACK TO BLOG</a></p>
-      <h1 class="font-bold font-sans break-normal text-gray-900 pt-6 pb-2 text-3xl md:text-4xl">Welcome to Wonsup Jung's Blog</h1>
-      <p class="text-sm md:text-base font-normal text-gray-600">Updated 10 November 2021</p>
-    </div>
--->
-  </div>
-
-  <!--Divider-->
-
   <div class="p-10">
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
   </div>
-
-
-
   <hr class="border-b-2 border-gray-400 mb-8 mx-4">
 
   <!--Author-->
@@ -112,41 +66,10 @@
         <!--<a class="text-green-500 no-underline hover:underline" href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a>--></p>
     </div>
     <div class="justify-end">
-      <button class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full">Read More</button>
+      <button
+        class="bg-transparent border border-gray-500 hover:border-green-500 text-xs text-gray-500 hover:text-green-500 font-bold py-2 px-4 rounded-full">
+        Read More
+      </button>
     </div>
   </div>
-  <!--/Author-->
-
-  <!--Divider-->
-
-  <!--Next & Prev Links-->
-<!--
-  <div class="font-sans flex justify-between content-center px-4 pb-12">
-    <div class="text-left">
-      <span class="text-xs md:text-sm font-normal text-gray-600">&lt; Previous Post</span><br>
-      <p><a href="#" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Blog title</a></p>
-    </div>
-    <div class="text-right">
-      <span class="text-xs md:text-sm font-normal text-gray-600">Next Post &gt;</span><br>
-      <p><a href="#" class="break-normal text-base md:text-sm text-green-500 font-bold no-underline hover:underline">Blog title</a></p>
-    </div>
-  </div>
--->
-
-
-  <!--/Next & Prev Links-->
-
 </div>
-
-
-<!--
-<div class="p-10">
-  <router-outlet></router-outlet>
-</div>
-<footer class="h-20 bg-black">
-  <div class="mt-8">
-    <p class="text-center text-white">Copyright wonsup.jung 2019</p>
-  </div>
-</footer>
--->
-
