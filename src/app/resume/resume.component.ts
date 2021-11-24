@@ -11,18 +11,8 @@ export class ResumeComponent implements OnInit {
 
   ngOnInit() {
   }
-  onGo() {
-    window.alert('현재 기능 구현 중입니다');
-  }
   selectLanguage(lang: string) {
-    if(lang === 'Korean') {
-      this.language = 'English';
-      // console.log(' resume korean selected');
-    } else {
-      this.language = 'Korean';
-      // console.log(' resume american selected');
-    }
+    this.language = lang;
     this.cdr.detectChanges();
   }
-
 }

@@ -4,7 +4,7 @@
   <!-- Post Content Column -->
   <ng-container *ngIf="language === 'Korean';else english">
     <div class="mt-20">
-      <p class="mb-5 text-3xl">Example programs for demo.</p>
+      <p class="mb-5 text-3xl">Description of Example programs.</p>
     </div>
 
     <hr class="border-b-2 border-gray-400 mt-8 mb-4">
@@ -248,7 +248,7 @@
 <!-- ------------------------- English part -----------------------------------  -->
   <ng-template #english>
     <div class="mt-20">
-      <p class="mb-5 text-3xl">Example programs for demo.</p>
+      <p class="mb-5 text-3xl">Description of Example programs.</p>
     </div>
 
     <hr class="border-b-2 border-gray-400 mt-8 mb-4">
@@ -278,11 +278,6 @@
       <li>Since it takes a lot of time to load the image, webworker technology is applied to compensate for this.
       </li>
       <li> And, once read images are stored by applying a cache to display them quickly later.</li>
-      <li class="text-blue-700"> 사용자가 하나의 그룹(category)을 선택했다가, 이미지가 caching 되는 중에도, 다른 그룹을
-        선택할 수 있기 때문에, 이 때 이미지 전시 하는 시간이 지연되는 것을 방지하기 위하여 webworker 기술을 적용하였다.
-        그러면, 이전에 선태한 category의 이미지를  로딩중에 다른 category 선택이 되어도,
-        바로 다른 그룹으로 바꾸어서 image loading이 가능하도록 개발했다.
-      </li>
       <li> The user selects one group (category), and while the image is caching, another group is selected.
         Since it is selectable, webworker technology is applied to prevent the image display time from being delayed at this time.
         Then, even if another category is selected while loading the image of the previously selected category,
@@ -309,14 +304,9 @@
       <li> The grid (window split) function is difficult to customize when using the existing library.
         Implemented by applying directive.
       </li>
-      <li class="text-blue-700"> split window 구현 시, 각각의 split window 는 각각의 이미지 그룹(category)을 표시하는 과정을
-        필요하다, 이 때 각 window에서 첫번째 이미지만 우선 표시 하고, 작업이 끝나면, 바로
-        다음 split window가 작업을 시작한다..
-
-      </li>
       <li> When implementing a split window, each split window needs the process of displaying each image group (category).
-        At this time, only the first image in each window is displayed first, and when that operation is finished, immediately
-        The next split window starts working.
+        At this time, only the first image of images in each window is displayed first, and when that operation (the first image is displayed)
+        is finished, immediately The next split window starts working.
       </li>
       <li> Each split window consists of a separate component. Therefore, each split window
         must have its own variable. A unique variable for each split window is kept in the service program.
@@ -364,17 +354,10 @@
         Displays images stored in the cache as thumbnails.</li>
       <li>When each window (split window) operates, the webworker for each window operates
         image reading is performed from the server.</li>
-      <li class="text-blue-700"> 프로그램이 시작할 때 category 별로 이미지를 loading하는 작업을 진행하면,
-        image loading 작업만을 계속 진행하여 화면에 image display하는 작업이 지연되기 때문에
-        처음 한 페이지만 화면에 바로 전시하고 나머지 페이지는 cache 저장하는 작업을 자연스럽게 하기 위해서
-        webworker 기능을 적용한다.</li>
-      <li> When the program starts and loads images by category,
+      <li>
         Because the image display operation is delayed by continuing only the image loading operation.
-        In order to naturally display only the first page on the screen and cache the rest of the pages.
-        Apply webworker function</li>
-      <li class="text-blue-700"> 이미지가 cache에 category별로 구분되지 않은 상태로 저장되기 때문에 이미지를
-        화면에 전시할 시에 선택된 category별로 sorting하는 작업을 별도의 webworker를 사용하여
-        구분한다.</li>
+        In order to naturally display only the first page on the screen, cache the rest of the pages
+        by using webworker function</li>
       <li> Images are stored uncategorically in the cache.
         When displaying on the screen, sorting by the selected category is performed using a separate webworker.
         </li>
@@ -419,7 +402,7 @@
     </ol>
     <p class="text-xl mt-8">Applied technology</p>
     <ol class="list-disc ml-6">
-      <li>NgXS: (Angular전용 Redux) : Apply Redux to change the state of each module of the program in one place
+      <li>NgXS: (Redux for Angular) : Apply Redux to change the state of each module of the program in one place
         Because it is managed, it is easy to manage the status, and it is easy to expand functions and maintain maintenance.
       </li>
       <li> Angular Material : Basic components (button, input, card, etc.) and table are applied</li>
@@ -467,7 +450,7 @@
     </p>
     <p>Program source : <a class="text-blue-700" href="https://github.com/wsjung0516/ocr-elements">Source</a></p>
     <p>&nbsp;</p>
-    <p class="text-xl">개요.</p>
+    <p class="text-xl">Summary.</p>
     <ol class="list-disc ml-6 mt-4">
       <li>This program is a sanction for import and export goods under the project implemented by the parent bank (to hostile countries in the US).
         with the purpose of restricting import and export) as a function,</li>
@@ -491,11 +474,8 @@
         created as a single JavaScript ( xxx.js file), and it is developed so that it can be directly
         inserted and applied like a JavaScript component in the necessary project.
       </li>
-      <li class="text-blue-700"> 이 파일을 적용하는 프로젝트는 이 파일의 input/output, property, event 정보를
-        참조하여, 마치 Lego block을 조립하는 것처럼 바로 적용(Embed)할 수 있음.
-      </li>
-      <li> The project to which this file is applied records the input/output, property, and event information of this file.
-        Referring to, it can be directly applied (Embed) as if assembling a Lego block.
+      <li> Any project to which this program (Angular Elements) is applied needs records of input/output, property, and event information of this file.
+         Because it can be directly applied (Embed) as if assembling a Lego block.
       </li>
       <li> Angular Material : Basic components (button, input, card, etc.) and table are applied</li>
       <li> Angular Animation : By applying the Angular Animation function, the table data is expressed vividly.</li>

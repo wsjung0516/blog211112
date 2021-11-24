@@ -23,11 +23,6 @@ export class AppComponent implements OnInit, AfterViewInit{
   @ViewChild('wise_saying') saying: ElementRef;
   @ViewChild(HomeComponent) homeComponent: HomeComponent;
 
-  // @HostListener('window:unload', ['$event'])
-  // public unloadHandler($event: any) {
-    // localStorage.setItem('language', 'Korean');
-  // }
-
   constructor(private cdr: ChangeDetectorRef) {
   }
 
