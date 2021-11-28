@@ -30,16 +30,16 @@
       id="nav-content">
       <ul class="list-reset lg:flex justify-end flex-1 items-center">
         <li class="mr-3">
-          <a class="inline-block py-2 px-4 text-white-900 font-bold no-underline" [routerLink]="['/home']"
-             href="#">Home</a>
+          <a class="inline-block py-2 px-4 text-gray-400 font-bold no-underline hover:text-blue-300 hover:text-underline " [routerLink]="['/home']"
+             routerLinkActive="active" href="#">Home</a>
         </li>
         <li class="mr-3">
-          <a class="inline-block text-white-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-             [routerLink]="['/skill']" href="#">Skill</a>
+          <a class="inline-block text-gray-400 no-underline hover:text-blue-300 hover:text-underline py-2 px-4"
+             [routerLink]="['/skill']" routerLinkActive="active" href="#">Skill</a>
         </li>
         <li class="mr-3">
-          <a class="inline-block text-white-600 no-underline hover:text-gray-900 hover:text-underline py-2 px-4"
-             [routerLink]="['/resume']" href="#">Resume</a>
+          <a class="inline-block text-gray-400 no-underline hover:text-blue-300 hover:text-underline py-2 px-4"
+             [routerLink]="['/resume']" routerLinkActive="active" href="#">Resume</a>
         </li>
       </ul>
       <div class="flex justify-end mb-5 text-gray-400">

@@ -7,7 +7,8 @@
     "build": "ng build --base-href https://wsjung0516.github.io/blog211112/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:prod": "cross-env NODE_ENV=production ng build --configuration production"
+    "build:prod": "cross-env NODE_ENV=production ng build --configuration production",
+    "deploy": "npx ngh --dir=dist/blog211112"
   },
   "private": true,
   "dependencies": {
