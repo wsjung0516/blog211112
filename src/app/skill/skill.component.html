@@ -20,6 +20,32 @@
         <!--          <p>RxJS: <a class="text-blue-700" href="https://wsjung0516.github.io/rxjs/">Details</a></p>-->
       </li>
     </ol>
+    <p class="text-xl mt-6">Storybook</p>
+    <ol class="list-disc ml-6">
+      <li class="mt-4">
+        <p>-  Storybook을 사용하여 UI를 개발함.</p>
+        <p>- 개발 방법은 UI는 content를 화면에 표시하고 event를 연결하는 작업만 수행함.</p>
+        <p>- Business Logic 하고 연결되는 부분은 Root component에서 처리함.</p>
+        <p>- Root Commponent와 children, grand children과 event연결이 필요한 경우는 parent-child 관계로 데이터를 전달함.</p>
+        <p>- reactive 방식으로 데이터 처리가 필요하면 Redux(ngxs)를 적용하여 연결함.</p>
+        <p>- 이렇게 개발함으로서 Designer, Developer, Tester 가 독립적으로 작업을
+        수행할 수 있으며, 프로그램의 가독성, 생상성, 유지보수성을 향상 시킬 수 있음. </p>
+        <p>- 경험내용: Storybook을 적용하여 split-window 데모프로그램을 개발하였음.</p>
+      </li>
+    </ol>
+    <p class="text-xl mt-6">Nx (Nrwl)</p>
+    <ol class="list-disc ml-6">
+      <li class="mt-4">
+        <p>- 프로그램 개발을 Single Repository principle 개념으로 설계함.</p>
+        <p>- Front-end framework에 상관없이 Front-end를 개발할 수 있음.</p>
+        <p>- Front-end, Back-end를 구분하지 않고 Data model을 같이 적용할 수 있고</p>
+        <p>- storybook, tailwindcss, redux, test, e2e test 등을 한번에 개발할 수 있는 개발환경 구성이 가능함.</p>
+        <p>- back-end에 nest library를 적용한다면, Front-end, Back-end를 동시에 개발할 수 있음.</p>
+        <p>-  경험내용: Nx를 적용하면 Angular 버전이 13 이상으로 webpack verision이 5.0을 사용하고,
+          storybook은 webpack verion 4.0이므로 현재 같이 적용하지 못하는 문제가 있어서(storybook이 deploy가
+          안되는 문제) 이것을 해결하기 하기 위해서 테스트한 경험이 있으며, 이 문제가 해결되면 다음 프로젝트에는 적용할 예정임.</p>
+      </li>
+    </ol>
 
 
     <p class="text-xl mt-6">Angular project 설계 고려사항</p>
@@ -165,6 +191,32 @@
           The training was focused on content that was difficult and practical.</p>
         <p>Angular & RxJS : <a class="text-blue-700" href="https://wsjung0516.github.io/angular/">Details</a></p>
         <!--          <p>RxJS: <a class="text-blue-700" href="https://wsjung0516.github.io/rxjs/">Details</a></p>-->
+      </li>
+    </ol>
+    <p class="text-xl mt-6">Storybook</p>
+    <ol class="list-disc ml-6">
+      <li class="mt-4">
+        <p>- Developed UI using Storybook.</p>
+        <p>- As for the development method, UI displays content on the screen and performs only the work of connecting events.</p>
+        <p>- The part connected with Business Logic is handled by the Root component.</p>
+        <p>- In case connection between root component and children and grand children and event is required, data is transmitted in parent-child relationship.</p>
+        <p>- If data processing is required in a reactive way, connect by applying Redux (ngxs).</p>
+        <p>- With this development, designers, developers, and testers can work independently</p>
+        <p>- It can be performed and can improve program readability, productivity, and maintainability.</p>
+        <p>- Experience: Developed a split-window demo program by applying Storybook.</p>
+      </li>
+    </ol>
+    <p class="text-xl mt-6">Nx (Nrwl)</p>
+    <ol class="list-disc ml-6">
+      <li class="mt-4">
+        <p>- Program development is designed with the concept of Single Repository principle.</p>
+        <p>- Front-end can be developed regardless of front-end framework.</p>
+        <p>- Data model can be applied together without distinguishing front-end and back-end.</p>
+        <p>- It is possible to configure a development environment that can develop storybook, tailwindcss, redux, test, e2e test, etc. at once.</p>
+        <p>- If the nest library is applied to the back-end, the front-end and the back-end can be developed at the same time.</p>
+        <p>- Experience: When Nx is applied, Angular version is 13 or higher, webpack verision is 5.0,
+          Since the storybook is webpack verion 4.0, there is a problem that it cannot be applied at the moment (storybook deploys
+          Problem) I have experience in testing to solve this problem, and when this problem is solved, it will be applied to the next project..</p>
       </li>
     </ol>
 
