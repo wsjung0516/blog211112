@@ -46,7 +46,20 @@
           안되는 문제) 이것을 해결하기 하기 위해서 테스트한 경험이 있으며, 이 문제가 해결되면 다음 프로젝트에는 적용할 예정임.</p>
       </li>
     </ol>
+    <p class="text-xl mt-6">Development Style</p>
+    <ol class="list-disc ml-6">
+      <li class="mt-4">
+        <p>- UI 설계가 진행되면, UI를 Group 별로 세분화 하고 Group 을 directory 로 구분함.</p>
+        <p>- 각 Group 은 세부적으로 분석되고, 각각 세부 group별로 child directory, grand child directory 가 생성됨.</p>
+        <p>-  directory 의 마지막에는 세부 item의 component가 개발됨.</p>
+        <p>-  이 새부 item을 기준으로 list를 개발하고, 각 item에서 발생하는 event 이용하여 상위 component 와 데이터 송, 수신을 수행함.</p>
+        <p>-  각 component 에서 발생하는 event가 reactive한 것이거나, group간 async 데이터 송, 수신이 필요하면 Reactive programming 기법을 적용함.</p>
+        <p>-  example documents 에는 work group에 대한 문서의 일부분을 표시함.</p>
+      </li>
+    </ol>
 
+    <span><a class="ml-5 text-blue-700"
+             href="https://wsjung0516.github.io/development_style"> Example </a></span>
 
     <p class="text-xl mt-6">Angular project 설계 고려사항</p>
     <ol class="list-disc ml-6">
@@ -169,7 +182,6 @@
         <div>nrwl / nx : Modern Angular Tool.</div>
         <div>Cypress: E2E Testing</div>
         <div>Storybook : Component Desing.</div>
-        <div>Prettier : Formatting (consistent code style and formatting is key to rapid development).</div>
       </li>
     </ol>
     <br/>
@@ -351,7 +363,6 @@
         <div>nrwl / nx : Modern Angular Tool.</div>
         <div>Cypress: E2E Testing</div>
         <div>Storybook : Component Desing.</div>
-        <div>Prettier : Formatting (consistent code style and formatting is key to rapid development).</div>
       </li>
     </ol>
     <br/>
