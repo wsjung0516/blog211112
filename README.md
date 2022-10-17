@@ -28,5 +28,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ### Blog
 
 	1. ng build --base-href "https://wsjung0516.github.io/blog211112/"
-  2, ng add angular-cli-ghpages
+    2, ng add angular-cli-ghpages
 	3. npx ngh --dir=dist/blog211112
